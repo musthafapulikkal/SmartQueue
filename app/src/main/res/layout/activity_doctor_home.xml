@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".Activity.DoctorHomeActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:id="@+id/img_doc_home"
+        android:src="@drawable/smartqueue3"/>
+    <Button
+        android:layout_below="@+id/img_doc_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="50dp"
+        android:id="@+id/id_doc_home_add_seats"
+        android:text="Add seats"
+        />
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="generate queue"
+    android:layout_below="@+id/id_doc_home_add_seats"
+    android:id="@+id/doc_hom_generate_q"
+    />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/send_notification_doc"
+        android:layout_below="@+id/doc_hom_generate_q"
+        android:text="Send notification"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/logout_doc"
+        android:layout_below="@+id/send_notification_doc"
+        android:text="Logout"/>
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.AdminHomeActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/admin"
+            android:id="@+id/id_admin_img"/>
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/id_admin_img"
+            android:padding="15dp"
+            android:layout_height="match_parent">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Request"
+                android:textColor="@color/white"
+                android:background="@color/orange"
+                android:id="@+id/id_admin_view_req"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Block users"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:background="@color/orange"
+                android:id="@+id/id_admin_view_blk"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:background="@color/orange"
+                android:id="@+id/id_admin_logout"/>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>
